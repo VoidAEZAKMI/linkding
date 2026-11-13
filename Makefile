@@ -38,3 +38,10 @@ e2e:
 
 frontend:
 	npm run dev
+
+up:
+	docker compose up -d
+down:
+	docker compose down
+logs:
+	docker compose logs -f linkding
