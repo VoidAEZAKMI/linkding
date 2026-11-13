@@ -1,4 +1,4 @@
-.PHONY: serve
+.PHONY: serve up down logs sync-upstream
 
 BIND ?= 127.0.0.1:8000
 
