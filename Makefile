@@ -1,4 +1,4 @@
-.PHONY: serve up down logs sync-upstream
+.PHONY: serve init tasks lint format prepare-e2e e2e frontend up down build logs sync-upstream
 
 BIND ?= 127.0.0.1:8000
 
@@ -40,9 +40,13 @@ frontend:
 	npm run dev
 
 up:
-	docker compose up -d
+	docker compose up -d --build
+
 down:
 	docker compose down
+
+build:
+	docker compose build
 logs:
 	docker compose logs -f linkding
 
