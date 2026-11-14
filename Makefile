@@ -1,4 +1,4 @@
-.PHONY: serve init tasks lint format prepare-e2e e2e frontend up down build logs sync-upstream
+.PHONY: serve init tasks lint format prepare-e2e e2e test frontend up down build logs sync-upstream
 
 BIND ?= 127.0.0.1:8000
 
