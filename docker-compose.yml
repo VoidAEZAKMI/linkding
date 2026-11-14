@@ -3,7 +3,7 @@ services:
     container_name: "${LD_CONTAINER_NAME:-linkding}"
     build:
       context: .
-      dockerfile: dockerfile/default.dockerfile
+      dockerfile: docker/default.dockerfile
       target: linkding
     image: linkding-local
     ports:
